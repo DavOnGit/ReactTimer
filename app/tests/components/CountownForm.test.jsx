@@ -18,7 +18,7 @@ describe('CountdownForm', () => {
     
     countdownForm.refs.seconds.value = '109'
     TestUtils.Simulate.submit($el.find('form')[0])
-    console.log($el.find('form')[0])
+    
     expect(spy).toHaveBeenCalledWith(109)
   })
   
